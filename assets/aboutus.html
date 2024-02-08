@@ -57,31 +57,31 @@
             </div>
         </nav>
         <!-- Search Bar -->
-                <div class="fixed top-20 left-1/2 transform -translate-x-1/2 bg-white border border-gray-300 p-4 rounded-md shadow-lg hidden"
-                id="searchBar">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-lg font-semibold">Type to Search</h2>
-                    <button onclick="toggleSearchBar()"
-                        class="text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="flex">
-                    <input type="text" id="searchInput" placeholder="Search Products..."
-                        class="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 w-full">
-                    <button onclick="searchProducts()"
-                        class="border border-gray-300 bg-gray-200 px-4 py-2 rounded-r-md hover:bg-gray-300 focus:outline-none focus:bg-gray-300">
-                        Search
-                    </button>
-                </div>
-                <!-- Additional elements for search functionality can be added here -->
+        <div class="fixed top-20 left-1/2 transform -translate-x-1/2 bg-white border border-gray-300 p-4 rounded-md shadow-lg hidden"
+            id="searchBar">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">Type to Search</h2>
+                <button onclick="toggleSearchBar()"
+                    class="text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
+            <div class="flex">
+                <input type="text" id="searchInput" placeholder="Search Products..."
+                    class="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 w-full">
+                <button onclick="searchProducts()"
+                    class="border border-gray-300 bg-gray-200 px-4 py-2 rounded-r-md hover:bg-gray-300 focus:outline-none focus:bg-gray-300">
+                    Search
+                </button>
+            </div>
+            <!-- Additional elements for search functionality can be added here -->
+        </div>
 
-            <!-- Search Result Container -->
-            <div id="searchResult" class="hidden text-center mt-4 text-gray-500">
-                <i class="fas fa-info-circle text-2xl mb-2"></i>
-                <p>No products were found matching your selection.</p>
-            </div>
+        <!-- Search Result Container -->
+        <div id="searchResult" class="hidden text-center mt-4 text-gray-500">
+            <i class="fas fa-info-circle text-2xl mb-2"></i>
+            <p>No products were found matching your selection.</p>
+        </div>
     </div>
      <!---------------------------NAV BAR-------------------------------------------- -->
      <style>
@@ -99,28 +99,51 @@
 <body>
      <!-- Scrolling Container -->
      <div class="overflow-y-auto" style="height: calc(100vh - 4rem);"> <!-- Adjust the height to account for navbar height -->
-        <!-- YouTube Video -->
-        <div class="flex justify-center items-center h-full mx-auto"> <!-- Center the content horizontally -->
-            <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=1" title="YouTube video player" frameborder="0" allowfullscreen width="800" height="450"></iframe>
-        </div>
-        <!-- YouTube Video -->
+       <!-- YouTube Video -->
+       <div class="flex justify-center items-center h-full mx-auto"> <!-- Center the content horizontally -->
+        <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=1" title="YouTube video player" frameborder="0" allowfullscreen width="800" height="450"></iframe>
+    </div>
+    <!-- YouTube Video -->
 
         <!-- Content -->
-        <div class="container mx-auto flex justify-center items-center mt-16" style="margin-top: 4rem;"> <!-- Adjust the margin-top to match the height of the navbar -->
+        <div class="container mx-auto flex justify-center items-center mt-16" style="margin-top: 4rem;"> <!-- Adjust margin-top to account for navbar height -->
             <div class="w-1/2">
                 <div class="text-center">
                     <h2 class="text-2xl font-bold">Who We Are</h2>
-                    <p class="text-gray-600 mt-4">Fashion is one of the most visceral forms of art. What we choose <br>
-                        to wear tells a story of who we are. Whether we wear black and <br>
-                        leather or pastels and silk, we are creating an inner version of<br>
-                         ourselves, whether we realize it or not. Clothes infuse us with <br>color and life.</p>
+                    <p class="text-gray-600 mt-4">Fashion is one of the most visceral forms of art. What we choose to wear tells a story of who we are. Whether we wear black and leather or pastels and silk, we are creating an inner version of ourselves, whether we realize it or not. Clothes infuse us with color and life.</p>
                 </div>
             </div>
             <div class="w-1/2 flex justify-end">
-                <img src="https://i.pinimg.com/originals/45/c3/a1/45c3a1d0e9e6e791454ad6e022e2c457.jpg" alt="Image" class="w-90 h-auto"> <!-- Increase the width as needed -->
+                <img src="path_to_your_image.jpg" alt="Image" class="w-96 h-auto"> <!-- Increase the width as needed -->
             </div>
         </div>
         <!-- Content -->
+
+        <!-- Additional Content -->
+        <div class="container mx-auto mt-8">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold">A Few Words About Our Team</h2>
+                <p class="text-gray-600 mt-4">Meet our talented team members:</p>
+            </div>
+            <div class="flex justify-center mt-8">
+                <div class="w-1/3 text-center px-4">
+                    <img src="path_to_keshav_image.jpg" alt="Dexy Gurung" class="w-64 h-auto mx-auto mb-4">
+                    <p><strong>Dexy Gurung</strong></p>
+                    <p>Founder/CEO</p>
+                </div>
+                <div class="w-1/3 text-center px-4">
+                    <img src="path_to_simran_image.jpg" alt="Biwash Gurung" class="w-64 h-auto mx-auto mb-4">
+                    <p><strong>Biwash Gurung</strong></p>
+                    <p>Marketing Head</p>
+                </div>
+                <div class="w-1/3 text-center px-4">
+                    <img src="path_to_samikchya_image.jpg" alt="Varun Gurung" class="w-64 h-auto mx-auto mb-4">
+                    <p><strong>Varun Gurung</strong></p>
+                    <p>Sales Head</p>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Content -->
     </div>
     <!-- Scrolling Container -->
     
