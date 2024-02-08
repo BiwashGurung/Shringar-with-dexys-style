@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shringar With Dexy Styles</title>
+    <link  rel="website icon" type="png" href="images/weblogo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+    
+    
+</head>
+<body>
+   
+  
+      <div class="flex justify-center">
+        <nav class="fixed top-0 left-0 right-0 z-10 bg-gray-100">
+            <div class="flex justify-between items-center max-w-7xl mx-auto px-4">
+                <h1 class="pl-9 py-1">
+                    <img src="images/weblogo.png" alt="Logo" class="h-16 w-20">
+                </h1>
+                <ul class="hidden lg:flex items-center text-[18px]">
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="assets/shop.html">Shop</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="assets/contact.html">Contact</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="assets/aboutus.html">About Us</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="assets/wishlist.html">Wishlist</a>
+                    </li>
+                    <!-- Search Bar Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5"
+                        id="searchIcon">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <!-- Login Button Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                      <a href="assets/login.html">
+                          <i class="fas fa-user"></i>
+                      </a>
+                    </li>
+
+                    <!-- Add to Cart Button Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="fixed top-20 left-1/2 transform -translate-x-1/2 bg-white border border-gray-300 p-4 rounded-md shadow-lg hidden"
+        id="searchBar">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-semibold">Type to Search</h2>
+            <button onclick="toggleSearchBar()"
+                class="text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="flex">
+            <input type="text" id="searchInput" placeholder="Search Products..."
+                class="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 w-full">
+            <button onclick="searchProducts()"
+                class="border border-gray-300 bg-gray-200 px-4 py-2 rounded-r-md hover:bg-gray-300 focus:outline-none focus:bg-gray-300">
+                Search
+            </button>
+        </div>
+        <!-- Additional elements for search functionality can be added here -->
+    </div>
+
+    <!-- Search Result Container -->
+    <div id="searchResult" class="hidden text-center mt-4 text-gray-500">
+        <i class="fas fa-info-circle text-2xl mb-2"></i>
+        <p>No products were found matching your selection.</p>
+    </div>
+
+   
+
+
+    
+
+    <section id="home" class="flex justify-center">
+
+        
+            <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col  max-w-7xl justify-center items-center space-y-3 w-full ">
+                  <div class="flex flex-col md:items-start items-center justify-center space-y-3 px-8 text-center mt-20">
+                    <div class="text-3xl md:text-7xl font-bold">
+                        Enhance the Charm of Your Fashion Style
+                    </div>
+                </div>
+                
+                    <div
+                        class="flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center ">
+    
+                        <div class="lg:w-40 w-64 h-40  overflow-hidden">
+                            <img src="https://i.pinimg.com/474x/3b/6f/f4/3b6ff4604d11d9332ed07af09526c286.jpg" alt="" class=""/>
+                        </div>
+                        <div class="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center">
+                            <div class="w-32 lg:w-40 h-32  overflow-hidden">
+                                <img src="https://i.pinimg.com/originals/6d/fe/bc/6dfebc7376a79244e9c479e3dd8246a5.jpg" alt="" class="" />
+                            </div>
+                            <div class="w-32 lg:w-40 h-48  overflow-hidden">
+                                <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2021/08/19093801/227461576_620109915562950_1375075231205608805_n.jpg" alt="" class="" />
+                            </div>
+                        </div>
+                        <div class="lg:w-60 w-64 h-96  overflow-hidden">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-6c3762098a9d9c7ab84ad5f4dc42a6ac-lq" alt="" class="" />
+                        </div>
+                        <div class="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center ">
+                            <div class="w-32 lg:w-40 h-48  overflow-hidden">
+                                <img src="https://i.pinimg.com/originals/35/b6/6c/35b66cc7c3ead4219e752e1fc183ae78.jpg" alt="" class="" />
+                            </div>
+                            <div class="w-32 lg:w-40 h-32  overflow-hidden">
+                                <img src="data:image/jpeg;base64,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" alt="" class="" />
+                            </div>
+                        </div>
+                        <div class="lg:w-40 w-64 h-40  overflow-hidden">
+                            <img src="https://i.pinimg.com/736x/df/41/a5/df41a594363065d967dce09ee6f40475.jpg" alt="" class="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    
+
+<section class="py-24 flex flex-col items-center justify-center">
+  <div class="container px-8 text-center"> <!-- Add px-8 for left and right padding -->
+    <span class="subheading text-green-600">How it works</span>
+    <h2 class="heading-secondary">
+      Lorem ipsum dolor sit amet consectetur
+    </h2>
+  </div>
+
+  <div class="container grid grid-cols-2 items-center grid-rows-3 gap-9.6 px-8"> <!-- Add px-8 for left and right padding -->
+    <!-- Step 1 -->
+    <div class="step-text-box text-center"> <!-- Center the text -->
+      <p class="step-number text-6xl font-semibold text-gray-300 mb-3">01</p>
+      <h3 class="heading-tertiary">
+        Lorem ipsum dolor sit amet
+      </h3>
+      <p class="step-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quasi quos asperiores minima dolorem eos quo blanditiis repellat, ullam similique quaerat enim maxime, quibusdam.
+      </p>
+    </div>
+    <div class="step-img-box relative flex items-center justify-center"> <!-- Center the image -->
+      <img src="app/screen1.png" alt="Preferences selection image" class="step-img w-1/3">
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-img-box relative flex items-center justify-center"> <!-- Center the image -->
+      <img src="app/screen2.png" alt "Preferences selection image" class="step-img w-1/3">
+    </div>
+    <div class="step-text-box text-center"> <!-- Center the text -->
+      <p class="step-number text-6xl font-semibold text-gray-300 mb-3">02</p>
+      <h3 class="heading-tertiary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </h3>
+      <p class="step-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quasi quos asperiores minima dolorem eos quo blanditiis repellat, ullam similique quaerat enim maxime, quibusdam voluptates fugit consequatur. Hic, recusandae a.
+      </p>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-text-box text-center"> <!-- Center the text -->
+      <p class="step-number text-6xl font-semibold text-gray-300 mb-3">03</p>
+      <h3 class="heading-tertiary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </h3>
+      <p class="step-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quasi quos asperiores minima dolorem eos quo blanditiis repellat, ullam similique quaerat enim maxime, quibusdam voluptates fugit consequatur. Hic, recusandae a.
+      </p>
+    </div>
+    <div class="step-img-box relative flex items-center justify-center"> <!-- Center the image -->
+      <img src="app/screen3.png" alt="Preferences selection image" class="step-img w-1/3">
+    </div>
+  </div>
+</section>
+
+
+<!-- -----------------------------------------------------  goToTopButton start from Here -------------------------------->
+<button id="goToTopButton" class="hidden fixed bottom-4 right-4 p-3 bg-transparent-500 text-black rounded-full shadow-md hover:bg-gray-200 focus:outline-none" aria-label="Go to top" onClick="scrollToTop()" style="border-radius: 50%;">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- -----------------------------------------------------  goToTopButton ends Here -------------------------------->
+
+      
+      
+      
+    <!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
+
+    <footer class="bg-gray-100 py-0">
+      <div class="container mx-auto flex items-center justify-center"> <!-- Center content -->
+        <!-- Logo and Footer Text - start -->
+        <div class="flex items-center space-x-4"> <!-- Added space-x-4 for spacing between logo and text -->
+          <img src="images/weblogo.png" alt="Shringar with dexy's style" class="w-20 h-auto"> <!-- Adjusted width -->
+          <p class="text-sm">&copy; <span class="footer-year"></span> All Right Reserved.</p>
+        </div>
+        <!-- Logo and Footer Text - end -->
+      </div>
+    </footer>
+    
+    
+
+<!-- -----------------------------------------------------  FOOTER ENDS Here -------------------------------->
+    <!---------------LINK FOR EXTERNAL JS------------------->
+    <script src="assets/main.js"></script>
+    <!---------------LINK FOR EXTERNAL JS------------------->
+</body>
+</html>
