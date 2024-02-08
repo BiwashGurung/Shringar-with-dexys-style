@@ -90,8 +90,8 @@
             top: 4rem; /* Adjust as needed to leave space for the navbar */
             left: 0;
             width: 100%;
-            height: calc(100% - 8rem); /* Adjust as needed to leave space for both navbar and footer */
-            z-index: 9999;
+            height: calc(80% - 2rem); /* Adjust as needed to leave space for both navbar and footer */
+            z-index: 9;
         }
         .youtube-video iframe {
             width: 100%;
@@ -110,7 +110,7 @@
 </head>
 <body>
      <!-- Scrolling Container -->
-     <div class="overflow-y-auto" style="padding-top: 4rem;"> <!-- Adjust the top padding to match the height of the navbar -->
+     <div class="overflow-y-auto">
         <!-- YouTube Video -->
         <div class="youtube-video">
             <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
@@ -118,7 +118,7 @@
         <!-- YouTube Video -->
 
         <!-- Content -->
-        <div class="container mx-auto flex justify-center items-center mt-16">
+        <div class="container mx-auto flex justify-center items-center mt-16" style="margin-top: 4rem;"> <!-- Adjust the margin-top to match the height of the navbar -->
             <div class="w-1/2">
                 <div class="text-center">
                     <h2 class="text-2xl font-bold">Who We Are</h2>
