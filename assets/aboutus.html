@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Shringal with dexy's style</title>
+    <link rel="icon" type="png" href="../images/weblogo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+</head>
+<body>
+     <!---------------------------NAV BAR-------------------------------------------- -->
+
+     <div class="flex justify-center">
+        <nav class="fixed top-0 left-0 right-0 z-10 bg-gray-100">
+            <div class="flex justify-between items-center max-w-7xl mx-auto px-4">
+                <h1 class="pl-9 py-1">
+                    <img src="../images/weblogo.png" alt="Logo" class="h-16 w-20">
+                </h1>
+                <ul class="hidden lg:flex items-center text-[18px]">
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="shop.html">Shop</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="wishlist.html">Wishlist</a>
+                    </li>
+                    <!-- Search Bar Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5"
+                        id="searchIcon">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <!-- Login Button Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                      <a href="login.html">
+                          <i class="fas fa-user"></i>
+                      </a>
+                    </li>
+
+                    <!-- Add to Cart Button Icon -->
+                    <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 px-5">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Search Bar -->
+                <div class="fixed top-20 left-1/2 transform -translate-x-1/2 bg-white border border-gray-300 p-4 rounded-md shadow-lg hidden"
+                id="searchBar">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-lg font-semibold">Type to Search</h2>
+                    <button onclick="toggleSearchBar()"
+                        class="text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="flex">
+                    <input type="text" id="searchInput" placeholder="Search Products..."
+                        class="border border-gray-300 px-4 py-2 rounded-l-md focus:outline-none focus:ring focus:border-blue-300 w-full">
+                    <button onclick="searchProducts()"
+                        class="border border-gray-300 bg-gray-200 px-4 py-2 rounded-r-md hover:bg-gray-300 focus:outline-none focus:bg-gray-300">
+                        Search
+                    </button>
+                </div>
+                <!-- Additional elements for search functionality can be added here -->
+            </div>
+
+            <!-- Search Result Container -->
+            <div id="searchResult" class="hidden text-center mt-4 text-gray-500">
+                <i class="fas fa-info-circle text-2xl mb-2"></i>
+                <p>No products were found matching your selection.</p>
+            </div>
+    </div>
+     <!---------------------------NAV BAR-------------------------------------------- -->
+     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .youtube-video {
+            position: absolute;
+            top: 4rem; /* Adjust as needed to leave space for the navbar */
+            left: 0;
+            width: 100%;
+            height: calc(100% - 8rem); /* Adjust as needed to leave space for both navbar and footer */
+            z-index: 9999;
+        }
+        .youtube-video iframe {
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- YouTube Video -->
+     <div class="youtube-video">
+        <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- YouTube Video -->
+
+    
+     <!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
+
+     <!-- Footer -->
+     <footer class="bg-gray-100 py-0">
+        <div class="container mx-auto flex items-center justify-center"> <!-- Center content -->
+            <div class="flex items-center space-x-4"> <!-- Added space-x-4 for spacing between logo and text -->
+                <img src="../images/weblogo.png" alt="Shringar with dexy's style" class="w-20 h-auto"> <!-- Adjusted width -->
+                <p class="text-sm">&copy; <span class="footer-year"></span> All Right Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+<!-- -----------------------------------------------------  FOOTER ENDS Here -------------------------------->
+                
+    
+
+     <!---------------LINK FOR EXTERNAL JS------------------->
+     <script src="main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <!---------------LINK FOR EXTERNAL JS------------------->
+</body>
+</html>
