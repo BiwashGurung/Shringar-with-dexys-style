@@ -85,18 +85,6 @@
     </div>
      <!---------------------------NAV BAR-------------------------------------------- -->
      <style>
-        .youtube-video {
-            position: absolute;
-            top: 4rem; /* Adjust as needed to leave space for the navbar */
-            left: 0;
-            width: 100%;
-            height: calc(80% - 2rem); /* Adjust as needed to leave space for both navbar and footer */
-            z-index: 9;
-        }
-        .youtube-video iframe {
-            width: 100%;
-            height: 100%;
-        }
         footer {
             position: fixed;
             bottom: 0;
@@ -110,10 +98,10 @@
 </head>
 <body>
      <!-- Scrolling Container -->
-     <div class="overflow-y-auto">
+     <div class="overflow-y-auto" style="height: calc(100vh - 4rem);"> <!-- Adjust the height to account for navbar height -->
         <!-- YouTube Video -->
-        <div class="youtube-video">
-            <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=1" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <div class="flex justify-center items-center h-full">
+            <iframe src="https://www.youtube.com/embed/VinuMfZcNMw?autoplay=1&controls=0&disablekb=1" title="YouTube video player" frameborder="0" allowfullscreen width="800" height="450"></iframe>
         </div>
         <!-- YouTube Video -->
 
