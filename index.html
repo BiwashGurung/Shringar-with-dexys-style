@@ -252,18 +252,40 @@
                 <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add to Wishlist</button>
                 <div class="text-sm mt-2">Sold Out</div>
             </div>
+            
              <!-- Product Item 6 -->
-            <div class="bg-white p-6 rounded-lg shadow-md">
+             <div class="bg-white p-6 rounded-lg shadow-md relative">
+              <!-- Sale Box -->
+              <div class="absolute top-0 left-0 bg-blue-500 text-white px-2 py-1 rounded-tl rounded-br text-sm">Sale!</div>
+              
+              <!-- Product Image -->
               <img src="https://via.placeholder.com/150" alt="Product Image" class="mb-4">
-              <div class="text-xl font-semibold mb-2">p210pinkWindcheaters</div>
-              <div class="text-gray-500 mb-2">Ladies Lining Wind cheater Jacket</div>
-              <div class="flex justify-between items-center mb-2">
-                <div class="text-red-500 line-through">₨ 1,999.00</div>
-                <div class="text-gray-900 font-bold">₨ 999.00</div>
+              
+              <!-- Product Details -->
+              <div>
+                  <div class="text-xl font-semibold mb-2">p309GoldenTops</div>
+                  <div class="text-gray-500 mb-2">Ladies Lace Tops</div>
+                  
+                  <!-- Price -->
+                  <div class="flex justify-between items-center mb-2">
+                    <div class="text-red-500 line-through">₨ 1,999.00</div>
+                    <div class="text-gray-900 font-bold">₨ 999.00</div>
+                  </div>
               </div>
-              <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add to Wishlist</button>
-              <div class="text-sm mt-2">Sold Out</div>
-          </div>
+
+              <!-- Buttons Container -->
+              <div class="flex">
+                  <!-- Add to Wishlist Button -->
+                  <button class="bg-blue-500 text-white py-1 px-2 rounded-l hover:bg-blue-600 focus:outline-none mb-2 mr-1 flex-1" onclick="addToWishlist(this)">
+                      <span>🤍</span> Wishlist
+                  </button>
+                  
+                  <!-- Add to Cart Button -->
+                  <button class="bg-blue-500 text-white py-1 px-2 rounded-r hover:bg-blue-600 focus:outline-none mb-2 ml-1 flex-1" onclick="addToCart(this)">
+                    <span>🛒</span> Cart
+                  </button>
+              </div>
+            </div>
 
            <!-- Product Item 7 -->
            <div class="bg-white p-6 rounded-lg shadow-md relative">
