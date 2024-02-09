@@ -88,54 +88,66 @@
     <!-- Contact Section -->
     <div class="container mx-auto mt-20">
         <h1 class="text-4xl font-bold text-center mb-20">Contact Us</h1>
-        <div class="flex justify-between">
+        <div class="flex justify-center flex-col items-center mb-20">
             <!-- Contact Information -->
-            <div>
-                <p class="text-lg font-bold text-center mb-4">We are here to help!</p>
-                <p class="text-gray-600">Kathmandu, Nepal, 44600</p>
-                <p class="text-gray-600">+977-9808270656</p>
-                <div class="flex mt-4 space-x-4">
-                    <!-- Social Media Icons -->
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-viber"></i>
-                    </a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+            <div class="text-center mb-8">
+                <p class="text-lg font-bold">We are here to help!</p>
+                <p class="text-gray-600 mb-4"><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal, 44600</p>
+                <p class="text-gray-600 mb-4"><i class="fas fa-phone"></i> +977-9808270656</p>
             </div>
-            <!-- Contact Form -->
-            <form class="w-1/2">
-                <div class="flex flex-wrap -m-2">
-                    <h2 class="text-lg font-bold mb-4">Send us a message</h2>
-                    <div class="w-full p-2">
-                        <label for="name" class="block mb-1 text-gray-600">Name *</label>
-                        <input type="text" id="name" name="name" placeholder="First Name Last Name" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">
+                    <i class="fab fa-viber"></i>
+                </a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-8">Send us a message</h2>
+            <form class="w-full max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                            Name
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First Name">
                     </div>
-                    <div class="w-full p-2">
-                        <label for="email" class="block mb-1 text-gray-600">Email *</label>
-                        <input type="email" id="email" name="email" placeholder="Email Address" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                            Email
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last Name">
                     </div>
-                    <div class="w-full p-2">
-                        <label for="subject" class="block mb-1 text-gray-600">Subject *</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
-                    </div>
-                    <div class="w-full p-2">
-                        <label for="message" class="block mb-1 text-gray-600">Comment or Message *</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Your Message" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300"></textarea>
-                    </div>
-                    <div class="w-full p-2">
-                        <button type="submit" class="bg-gray-800 text-white py-2 px-6 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">Send Message</button>
-                    </div>
+                </div>
+                <div class="w-full mb-6">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Subject
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="Subject">
+                </div>
+                <div class="w-full mb-6">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Comment or Message
+                    </label>
+                    <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="Your Message"></textarea>
+                </div>
+                <div class="w-full mb-6">
+                    <button class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Send Message
+                    </button>
                 </div>
             </form>
         </div>
