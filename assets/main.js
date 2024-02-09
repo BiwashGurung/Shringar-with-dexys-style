@@ -66,4 +66,9 @@ window.addEventListener('scroll', function () {
     } else {
         button.classList.add('hidden');
     }
-});    
+});  
+
+
+function sendMessage() {
+    alert("Your message has been sent!");
+}
