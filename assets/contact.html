@@ -186,23 +186,7 @@
     <button id="goToTopButton" class="hidden fixed bottom-4 right-4 p-3 bg-transparent-500 text-black rounded-full shadow-md hover:bg-gray-200 focus:outline-none" aria-label="Go to top" onClick="scrollToTop()" style="border-radius: 50%; z-index: 9999;">
         <i class="fas fa-arrow-up"></i>
     </button>
-    <script>
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        window.addEventListener('scroll', function () {
-            var button = document.getElementById('goToTopButton');
-            if (window.scrollY > 200) {
-                button.classList.remove('hidden');
-            } else {
-                button.classList.add('hidden');
-            }
-        });
-    </script>
+    
     <!-- End Script for Go to Top Button -->
 </body>
 </html>
