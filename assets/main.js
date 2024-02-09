@@ -68,7 +68,7 @@ window.addEventListener('scroll', function () {
     }
 });  
 
-
+// to send pop up message for contact page form
 function sendMessage() {
     alert("Your message has been sent!");
 }
