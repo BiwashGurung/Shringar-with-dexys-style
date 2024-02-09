@@ -275,18 +275,49 @@
             <div class="text-sm mt-2">Sold Out</div>
         </div>
          <!-- Product Item 8 -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <img src="https://via.placeholder.com/150" alt="Product Image" class="mb-4">
-          <div class="text-xl font-semibold mb-2">p210pinkWindcheaters</div>
-          <div class="text-gray-500 mb-2">Ladies Lining Wind cheater Jacket</div>
-          <div class="flex justify-between items-center mb-2">
-            <div class="text-gray-900 font-bold">₨ 999.00</div>
-            <div class="text-red-500 line-through">₨ 1,199.00</div>
-          </div>
-          <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Add to Wishlist</button>
-          <div class="text-sm mt-2">Sold Out</div>
-      </div>
-        </div>
+        <!-- Product Item -->
+<div class="bg-white p-6 rounded-lg shadow-md relative">
+  <!-- Sale Box -->
+  <div class="absolute top-0 left-0 bg-blue-500 text-white px-2 py-1 rounded-tl rounded-br text-sm">Sale!</div>
+  
+  <!-- Product Image -->
+  <img src="https://via.placeholder.com/150" alt="Product Image" class="mb-4">
+  
+  <!-- Product Details -->
+  <div class="text-xl font-semibold mb-2">p309GoldenTops</div>
+  <div class="text-gray-500 mb-2">Ladies Lace Tops</div>
+  
+  <!-- Price -->
+  <div class="flex justify-between items-center mb-2">
+      <div class="text-gray-900 font-bold">₨ 999.00</div>
+      <div class="text-red-500 line-through">₨ 1,199.00</div>
+  </div>
+  
+  <!-- Add to Wishlist Button -->
+  <button class="bg-blue-500 text-white py-2 px-4 rounded-l hover:bg-blue-600 focus:outline-none" onclick="addToWishlist(this)">
+      <span>🤍</span> Add to Wishlist
+  </button>
+  
+  <!-- Add to Cart Button -->
+  <button class="bg-blue-500 text-white py-2 px-4 rounded-r hover:bg-blue-600 focus:outline-none" onclick="addToCart(this)">
+      Add to Cart
+  </button>
+</div>
+<!-- Product Item -->
+
+<!-- JavaScript Function -->
+<script>
+  function addToWishlist(button) {
+      // Display message
+      alert("Added to your Wishlist!");
+  }
+
+  function addToCart(button) {
+      // Move to cart and display message
+      alert("Added to your Cart!");
+  }
+</script>
+
         <!-- End Product Listings -->
     </div>
 </section>
