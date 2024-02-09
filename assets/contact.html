@@ -84,9 +84,62 @@
             </div>
     </div>
      <!---------------------------NAV BAR-------------------------------------------- -->
-     <!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
 
-     <footer class="bg-gray-100 py-0">
+    <!-- Contact Section -->
+    <div class="container mx-auto mt-20">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold">Contact Us</h2>
+            <p class="text-gray-600 mt-4">We are here to help!</p>
+            <p class="text-gray-600">Kathmandu, Nepal, 44600</p>
+            <p class="text-gray-600">+977-9808270656</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-8">
+            <!-- Social Media Icons -->
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-viber"></i>
+            </a>
+            <a href="#" class="text-gray-600 hover:text-gray-800">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <!-- Contact Form -->
+        <form class="mt-8 max-w-lg mx-auto">
+            <div class="flex flex-wrap -m-2">
+                <div class="w-full p-2">
+                    <label for="name" class="block mb-1 text-gray-600">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="First Name Last Name" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+                <div class="w-full p-2">
+                    <label for="email" class="block mb-1 text-gray-600">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+                <div class="w-full p-2">
+                    <label for="subject" class="block mb-1 text-gray-600">Subject *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                </div>
+                <div class="w-full p-2">
+                    <label for="message" class="block mb-1 text-gray-600">Comment or Message *</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" class="border border-gray-300 px-4 py-2 w-full rounded-md focus:outline-none focus:ring focus:border-blue-300"></textarea>
+                </div>
+                <div class="w-full p-2">
+                    <button type="submit" class="bg-gray-800 text-white py-2 px-6 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
+    <footer class="bg-gray-100 py-0">
         <div class="container mx-auto flex items-center justify-center"> <!-- Center content -->
           <!-- Logo and Footer Text - start -->
           <div class="flex items-center space-x-4"> <!-- Added space-x-4 for spacing between logo and text -->
@@ -96,15 +149,34 @@
           <!-- Logo and Footer Text - end -->
         </div>
       </footer>
-
-<!-- -----------------------------------------------------  FOOTER ENDS Here -------------------------------->
+    <!-- -----------------------------------------------------  FOOTER ENDS Here -------------------------------->
                 
-    
+    <!---------------LINK FOR EXTERNAL JS------------------->
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!---------------LINK FOR EXTERNAL JS------------------->
+    <!-- Script for Go to Top Button -->
+    <button id="goToTopButton" class="hidden fixed bottom-4 right-4 p-3 bg-transparent-500 text-black rounded-full shadow-md hover:bg-gray-200 focus:outline-none" aria-label="Go to top" onClick="scrollToTop()" style="border-radius: 50%; z-index: 9999;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
 
-     <!---------------LINK FOR EXTERNAL JS------------------->
-     <script src="main.js"></script>
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <!---------------LINK FOR EXTERNAL JS------------------->
+        window.addEventListener('scroll', function () {
+            var button = document.getElementById('goToTopButton');
+            if (window.scrollY > 200) {
+                button.classList.remove('hidden');
+            } else {
+                button.classList.add('hidden');
+            }
+        });
+    </script>
+    <!-- End Script for Go to Top Button -->
 </body>
 </html>
