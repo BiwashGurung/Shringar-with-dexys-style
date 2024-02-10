@@ -86,89 +86,44 @@
      <!---------------------------NAV BAR-------------------------------------------- -->
                 
 <!---------------------------Login-------------------------------------------- -->
-<div class="flex justify-center mt-5"> 
-    <div class="flex flex-col justify-center">
-        <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
-            <div class="overflow-hidden w-full m-4 flex justify-center bg-gray-50 rounded-lg shadow-xl">
-                <div class="flex flex-col md:flex-row items-center shadow-md h-full ">
-                    <div class=" md:w-1/2 overflow-hidden "> 
-                        <div class="flex flex-col items-center justify-center text-stone-400">
-                            <h1 class="pl-9 py-5">
-                                <img src="../images/weblogo.png" alt="Logo" class="h-30 w-40"> 
-                            </h1>
-                            <div class="flex flex-col"> 
-                                <div class="m-2">EMAIL</div> 
-                                <input class="border-b m-2 bg-gray-50 focus:outline-none" /> 
-                                <div class="m-2">PASSWORD</div> 
-                                <input class="border-b m-2 bg-gray-50 focus:outline-none" type="password" /> 
-                                <div class="flex m-2"> 
-                                    <input class="border-b border-stone-400 " type="checkbox" /> 
-                                    <div class="ml-1 text-blue-900">Remember Me</div> 
+    <div class="flex justify-center mt-5"> 
+        <div class="flex flex-col justify-center">
+             <div class="flex flex-col md:flex-row max-w-7xl justify-center items-center ">
+                 <div class="overflow-hidden w-full m-4 flex justify-center bg-gray-50 rounded-lg shadow-xl">
+                     <div class="flex flex-col md:flex-row items-center shadow-md h-full ">
+                         <div class=" md:w-1/2 overflow-hidden "> 
+                            <div class="flex flex-col items-center justify-center text-stone-400">
+                                <h1 class="pl-9 py-5">
+                                    <img src="../images/weblogo.png" alt="Logo" class="h-30 w-40"> 
+                                </h1>
+                                
+                                  <div class="flex flex-col"> <div class="m-2">EMAIL</div> 
+                                  <input class="border-b m-2 bg-gray-50 focus:outline-none" /> 
+                                  <div class="m-2">PASSWORD</div> 
+                                  <input class="border-b m-2 bg-gray-50 focus:outline-none" type="password" /> 
+                                  <div class="flex m-2"> <input class="border-b border-stone-400 " type="checkbox" /> 
+                                    <div class="ml-1 text-blue-900">Remember Me</div> </div> <div class="flex m-2"> 
+                                        <button id="loginButton" class="bg-blue-800 px-6 py-1 rounded-2xl text-white font-medium transition duration-300 ease-in-out hover:from-blue-800 hover:to-red-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                                            LOGIN
+                                        </button>
+                                        <button class="text-transparent bg-clip-text bg-gradient-to-l from-blue-900 to-red-600 font-bold ml-2 border-2 rounded-2xl px-6 border-gray-400 transition duration-300 ease-in-out hover:text-blue-900 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                                            CREATE ACCOUNT
+                                        </button>
+                                    </div> 
+                                        <div class="m-2 text-blue-900">Forgotten your login details?</div> 
+                                        <div class="font-medium ml-2 text-blue-900">Get Help Signing In</div> 
+                                    </div>
+                                 </div> 
                                 </div> 
-                                <div class="flex m-2"> 
-                                    <button id="loginButton" class="bg-blue-800 px-6 py-1 rounded-2xl text-white font-medium transition duration-300 ease-in-out hover:from-blue-800 hover:to-red-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                                        LOGIN
-                                    </button>
-                                    <button id="createAccountButton" class="text-transparent bg-clip-text bg-gradient-to-l from-blue-900 to-red-600 font-bold ml-2 border-2 rounded-2xl px-6 border-gray-400 transition duration-300 ease-in-out hover:text-blue-900 hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
-                                        CREATE ACCOUNT
-                                    </button>
+                                <div class=" md:w-1/2 overflow-hidden "> 
+                                    <img src="https://wallpapercave.com/wp/wp4437862.jpg" alt="" class="" /> 
                                 </div> 
-                                <div class="m-2 text-blue-900">Forgotten your login details?</div> 
-                                <div class="font-medium ml-2 text-blue-900">Get Help Signing In</div> 
-                            </div>
+                            </div> 
                         </div> 
                     </div> 
-                    <div class=" md:w-1/2 overflow-hidden "> 
-                        <img src="https://wallpapercave.com/wp/wp4437862.jpg" alt="" class="" /> 
-                    </div> 
                 </div> 
-            </div> 
-        </div>
-    </div>
-</div>
-<!---------------------------Log in-------------------------------------------- -->
-<!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
-<footer class="bg-gray-100 py-0">
-    <div class="container mx-auto flex items-center justify-center"> <!-- Center content -->
-        <!-- Logo and Footer Text - start -->
-        <div class="flex items-center space-x-4"> <!-- Added space-x-4 for spacing between logo and text -->
-            <img src="../images/weblogo.png" alt="Shringar with dexy's style" class="w-20 h-auto"> <!-- Adjusted width -->
-            <p class="text-sm">&copy; <span class="footer-year"></span> All Right Reserved.</p>
-        </div>
-        <!-- Logo and Footer Text - end -->
-    </div>
-</footer>
-<!-- -----------------------------------------------------  FOOTER ENDS Here -------------------------------->
-
-<!---------------LINK FOR EXTERNAL JS------------------->
-<script src="main.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!---------------LINK FOR EXTERNAL JS------------------->
-
-<!-- JavaScript code to handle form switching -->
-<script>
-    // Get the login and create account form elements
-    const loginForm = document.querySelector('.login-form');
-    const createAccountForm = document.querySelector('.create-account-form');
-
-    // Get the buttons for switching between forms
-    const createAccountButton = document.getElementById('createAccountButton');
-    const loginButton = document.getElementById('loginButton');
-
-    // Add event listeners to the buttons
-    createAccountButton.addEventListener('click', () => {
-        // Hide the login form and show the create account form
-        loginForm.style.display = 'none';
-        createAccountForm.style.display = 'block';
-    });
-
-    loginButton.addEventListener('click', () => {
-        // Show the login form and hide the create account form
-        loginForm.style.display = 'block';
-        createAccountForm.style.display = 'none';
-    });
-</script>
+            </div>
+            <!---------------------------Log in-------------------------------------------- -->
             <!-- -----------------------------------------------------  FOOTER START FROM Here -------------------------------->
 
             <footer class="bg-gray-100 py-0">
