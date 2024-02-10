@@ -73,3 +73,12 @@ function sendMessage() {
     alert("Your message has been sent!");
 }
 
+
+ // Get the login button element
+ const loginButton = document.getElementById('loginButton');
+
+ // Add click event listener to the login button
+ loginButton.addEventListener('click', () => {
+     // Display login successful message
+     alert('Login Successful');
+ });
